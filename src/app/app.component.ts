@@ -8,5 +8,6 @@ import * as data from '../assets/db.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  dbJson = data.jack;
+  header = data.jack;
+  items = data.items;
 }

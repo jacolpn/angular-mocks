@@ -41,12 +41,26 @@
     color: var(--color-text-base);
 }
 
+.item {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(2, 1fr);
+    width: 72%;
+    padding-bottom: 5%;
+}
+
 @media (max-width: 1100px) {
     .box-body {
         display: inline;
     }
+    
     .box-img-detail {
         width: 200px;
+    }
+
+    .item {
+        display: inline;
+        width: 74%;
     }
 }
   

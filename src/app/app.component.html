@@ -1,18 +1,25 @@
 <section class="wrapper">
   <div class="content">
     <div class="box-body">
-      <div *ngIf="dbJson">
-          <img class="box-img-detail" [src]="dbJson?.imagePath" />
+      <div *ngIf="header">
+          <img class="box-img-detail" [src]="header?.imagePath" />
       </div>
 
       <dl class="box-body-information">
         <dt>Nome</dt>
-        <dd>{{ dbJson?.name }}</dd>
+        <dd>{{ header?.name }}</dd>
         <dt>Categoria</dt>
-        <dd>{{ dbJson?.category }}</dd>
+        <dd>{{ header?.category }}</dd>
         <dt>Quem somos</dt>
-        <dd>{{ dbJson?.about }}</dd>
+        <dd>{{ header?.about }}</dd>
       </dl>
     </div>
+  </div>
+</section>
+
+<section class="wrapper">
+  <div class="item">
+    <app-item *ngFor="let item of items" [itemInput]="item">
+    </app-item>
   </div>
 </section>
