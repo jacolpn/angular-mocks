@@ -1,0 +1,9 @@
+{ 
+  "jack": {
+    "id": "jack-daniels",
+    "name": "Jack Daniel's",
+    "category": "Whisky",
+    "imagePath": "assets/img/jack-daniels.png",
+    "about": "Mais de 150 anos se passaram desde que Nearest e Jack começaram a fazer whiskey juntos e, até hoje, sempre houve um membro da família Green trabalhando na Destilaria Jack Daniel."
+  }
+}
